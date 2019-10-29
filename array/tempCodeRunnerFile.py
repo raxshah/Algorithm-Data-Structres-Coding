@@ -1,18 +1,18 @@
 #find value at given percentile
 
 import math
-def find_percentile(arr,per):
-    arr.sort()
-    vl = (per/100) * (len(arr) - 1)
+def find_percentile(candidates,per):
+    candidates.sort()
+    vl = (per/100) * (len(candidates) - 1)
     f = math.floor(vl)
     c = math.ceil(vl)
     if f == c:
-        return arr[f]
-    left = arr[f] * (c-vl) 
-    right = arr[c] * (vl-f) 
+        return candidates[f]
+    left = candidates[f] * (c-vl) 
+    right = candidates[c] * (vl-f) 
 
     return left+right
 
-arr = [1,2,3,4,5]
+candidates = [1,2,3,4,5]
 per = 40
-print(find_percentile(arr,per))
+print(find_percentile(candidates,per))

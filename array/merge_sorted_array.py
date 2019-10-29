@@ -1,5 +1,5 @@
-# problem: merge two sorted arrays
-# https://leetcode.com/problems/merge-sorted-array/description/
+# problem: merge two sorted candidatesays
+# https://leetcode.com/problems/merge-sorted-candidatesay/description/
 
 class Solution:
     def merge(self, nums1, m, nums2, n):
